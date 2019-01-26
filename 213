@@ -1,0 +1,36 @@
+{
+  
+  "version": 1, // Allows versioning of the level. Must be an integer.
+  
+  "id": "decnoe.hopes_and_dreams", // An unique identifier of the level. More explanations below.
+  "title": "Hopes and Dreams", // Title of the level. Preferably, use the music title.
+  "artist": "Toby Fox", // Name of the music artist.
+  "illustrator": "masyu_0331", // Name of the background illustrator.
+  "charter": "Decnoe", // Name of the charter, i.e. chart creator.
+  
+  "music": {
+    "path": "Hopes and Dreams.mp3" // Relative path to the music file.
+  },
+  "music_preview": {
+    "path": "preview.mp3" // Relative path to the music preview file.
+  },
+  "background": {
+    "path": "background.jpg" // Relative path to the background image file.
+  },
+  "charts": [ // Here you can define at least one and at most three charts.
+    {
+      "type": "easy", // Type of the chart. Currently available types: "easy", "hard" and "extreme", all in lowercase.
+      "difficulty": 8, // If you were to put your chart into Cytus, what difficulty would you assign for it? --This option is for that. Can be any integer, even beyond 9.
+      "path": "chart.easy.txt" // Relative path to the chart text file.
+    },
+    {
+      "type": "hard",
+      "difficulty": 9,
+      "path": "chart.hard.txt",
+      "music_override" : {
+        "path": "Hopes and Dreams (Alt).mp3" // You can choose to override the music used in this difficulty. Similar to hidden songs of Cytus.
+      }
+    }
+  ]
+  
+}
